@@ -1,0 +1,25 @@
+/* MapPage.css */
+
+.mainCont {
+  display: flex;
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.mapCont {
+  width: 80%;
+}
+
+.buttonCont {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los botones horizontalmente */
+  margin: 20px; /* Ajusta el margen izquierdo según sea necesario */
+}
+.buttonCont button{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+/* Estilos adicionales según sea necesario */

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .treeCont{
+    height: calc(100vh - 150px);
+}
+  .imgCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #556B2F;
+    height: 100%;
+  }
+  
+  .imgCont img {
+    max-width: 48%;
+    padding: 20px;
+  }
+  .textCont{
+    padding: 30px;
+    background-color: aquamarine;
+    border-radius: 50px;
+  }
+  
+.section{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse; /* Fusiona los bordes de las celdas */
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black; /* Establece bordes negros para celdas y encabezados */
+    padding: 8px; /* Agrega espacio interno para mejorar la apariencia */
+  }
