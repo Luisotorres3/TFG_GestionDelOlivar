@@ -23,6 +23,7 @@ const BingMapsComponent = forwardRef((props, ref) => {
       view: new View({
         center: [0, 0],
         zoom: 2,
+        maxZoom: 19,
       }),
     });
 
