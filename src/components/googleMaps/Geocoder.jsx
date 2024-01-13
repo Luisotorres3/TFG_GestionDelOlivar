@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import 'ol-geocoder/dist/ol-geocoder.min.css';
 import Geocoder from 'ol-geocoder';
 
 const GeocoderComponent = ({ mapRef }) => {
@@ -15,6 +14,7 @@ const GeocoderComponent = ({ mapRef }) => {
         targetType: 'text-input',
         autoComplete: true,
         keepOpen: true,
+        target: 'geocoderContainer',
       });
 
       // Asociar el mapa al geocoder
