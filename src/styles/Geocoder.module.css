@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Estilos para el contenedor del Geocoder */
+.ol-geocoder {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para la caja de texto de búsqueda */
+  .gcd-txt-control {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .gcd-txt-label {
+    display: none; /* Puedes ocultar la etiqueta si no la necesitas */
+  }
+  
+  .gcd-txt-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+  }
+  
+  .gcd-txt-glass {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Estilos para los resultados de la búsqueda */
+  .gcd-txt-result {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gcd-txt-result li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .gcd-txt-result li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para el botón de búsqueda (opcional) */
+  .gcd-txt-search {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .gcd-txt-search:hover {
+    background-color: #0056b3;
+  }
+  
