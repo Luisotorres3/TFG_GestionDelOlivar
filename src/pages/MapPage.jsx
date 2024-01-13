@@ -1,28 +1,24 @@
 // MapPage.jsx
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect,useState  } from "react";
 import BingMapsComponent from "../components/googleMaps/BingMapsComponent";
 import styles from "../styles/MapPage.module.css";
 import GeocoderComponent from "../components/googleMaps/Geocoder";
 
 const MapPage = () => {
-  const mapRef = React.createRef();
-  const map = mapRef.current;
+  const mapRef = useRef();
+  const [mapReady, setMapReady] = useState(false);
 
   useEffect(() => {
-    if (mapRef) {
-      // Accede al mapa de Bing desde el ref
-      
-
-      // Ahora puedes hacer cualquier operación adicional en el mapa si es necesario
-    }
-  }, [mapRef]);
+    setMapReady(true);
+  }, []);
+  
   return (
     <div>
       <h2>Mapa de Lindes</h2>
       <div className={styles.mainCont}>
         <BingMapsComponent ref={mapRef} />
         <div className={styles.buttonCont}>
-          <GeocoderComponent map={mapRef.current} />
+          {mapReady && mapRef.current && <GeocoderComponent mapRef={mapRef} />}
           <button>Crear Linde</button>
           <button>Borrar Linde</button>
           <button>Modificar Linde</button>

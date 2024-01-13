@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, forwardRef } from 'react';
 import 'ol/ol.css';
-import 'ol-geocoder/dist/ol-geocoder.min.css';
-import Map from 'ol/Map';
-import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
+import View from 'ol/View';
+import Map from 'ol/Map';
 import BingMaps from 'ol/source/BingMaps';
-import Geocoder from 'ol-geocoder';
 
 const BingMapsComponent = forwardRef((props, ref) => {
   const mapRef = useRef();
@@ -28,29 +26,9 @@ const BingMapsComponent = forwardRef((props, ref) => {
       }),
     });
 
-    // Configuración del geocoder
-    const geocoder = new Geocoder('nominatim', {
-      provider: 'osm',
-      lang: 'es',
-      placeholder: 'Buscar dirección...',
-      targetType: 'text-input',
-      autoComplete: true,
-      keepOpen: true,
-    });
-
-    // Asociar el mapa al geocoder
-    geocoder.on('addresschosen', (event) => {
-      const coord = event.coordinate;
-      mapRef.current.getView().animate({ center: coord, zoom: 15 });
-    });
-
-    // Agregar el geocoder al mapa
-    mapRef.current.addControl(geocoder);
-
     return () => {
       // Limpieza al desmontar el componente, si es necesario
       mapRef.current.setTarget(null);
-      mapRef.current.removeControl(geocoder);
     };
   }, []);
 
@@ -61,7 +39,7 @@ const BingMapsComponent = forwardRef((props, ref) => {
     }
   }, [ref]);
 
-  return <div id="map" style={{ width: '100%', height: '80vh' }}></div>;
+  return <div ref={mapRef} id="map" style={{ width: '100%', height: '80vh' }}></div>;
 });
 
 export default BingMapsComponent;

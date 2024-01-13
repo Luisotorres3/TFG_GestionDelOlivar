@@ -1,39 +1,44 @@
-// GeocoderComponent.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import 'ol-geocoder/dist/ol-geocoder.min.css';
 import Geocoder from 'ol-geocoder';
-import 'ol/ol.css'; // Asegúrate de importar los estilos de OpenLayers
 
-const GeocoderComponent = ({ map }) => {
+const GeocoderComponent = ({ mapRef }) => {
+  const geocoderRef = useRef();
+
   useEffect(() => {
-    if (!map) {
-      return;
+    if (mapRef && mapRef.current) {
+      // Configuración del geocoder
+      const geocoder = new Geocoder('nominatim', {
+        provider: 'osm',
+        lang: 'es',
+        placeholder: 'Buscar dirección...',
+        targetType: 'text-input',
+        autoComplete: true,
+        keepOpen: true,
+      });
+
+      // Asociar el mapa al geocoder
+      geocoder.on('addresschosen', (event) => {
+        const coord = event.coordinate;
+        mapRef.current.getView().animate({ center: coord, zoom: 15 });
+      });
+
+      // Agregar el geocoder al mapa
+      mapRef.current.addControl(geocoder);
+
+      // Pasa la referencia del geocoder a través de props
+      geocoderRef.current = geocoder;
+
+      return () => {
+        // Limpieza al desmontar el componente, si es necesario
+        if (mapRef.current && geocoderRef.current) {
+          mapRef.current.removeControl(geocoderRef.current);
+        }
+      };
     }
+  }, [mapRef]);
 
-    const geocoder = new Geocoder('nominatim', {
-      collapsed: false, // Asegúrate de que no esté colapsado
-      placeholder: 'Buscar dirección...',
-      targetType: 'text-input',
-      lang: 'es-ES',
-      limit: 5,
-      keepOpen: true,
-    });
-
-    // Añadir el geocoder al mapa
-    map.addControl(geocoder);
-
-    // Mover el geocoder a la parte superior derecha
-    const geocoderElement = geocoder.element;
-    geocoderElement.style.position = 'absolute';
-    geocoderElement.style.top = '10px';
-    geocoderElement.style.right = '10px';
-
-    // Limpieza al desmontar el componente, si es necesario
-    return () => {
-      map.removeControl(geocoder);
-    };
-  }, [map]);
-
-  return null;
+  return null; // No necesitas un elemento HTML para el geocoder
 };
 
 export default GeocoderComponent;
