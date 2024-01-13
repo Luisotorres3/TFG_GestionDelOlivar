@@ -6,6 +6,7 @@ import Map from 'ol/Map';
 import BingMaps from 'ol/source/BingMaps';
 
 const BingMapsComponent = forwardRef((props, ref) => {
+  const { width, height } = props;
   const mapRef = useRef();
 
   useEffect(() => {
@@ -40,7 +41,7 @@ const BingMapsComponent = forwardRef((props, ref) => {
     }
   }, [ref]);
 
-  return <div ref={mapRef} id="map" style={{ width: '100%', height: '80vh' }}></div>;
+  return <div ref={mapRef} id="map" style={{ width: width, height: height, marginLeft:'30px' }}></div>;
 });
 
 export default BingMapsComponent;

@@ -41,3 +41,8 @@ table {
     border: 1px solid black; /* Establece bordes negros para celdas y encabezados */
     padding: 8px; /* Agrega espacio interno para mejorar la apariencia */
   }
+
+  .mapCont{
+    width: 30%;
+    height: 60%;
+  }

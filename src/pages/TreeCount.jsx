@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect,useState  } from "react";
 import styles from "../styles/TreeCount.module.css";
+import BingMapsComponent from "../components/googleMaps/BingMapsComponent";
+import GeocoderComponent from "../components/googleMaps/Geocoder";
 export default function TreeCount() {
+
+  const mapRef = useRef();
+  const [mapReady, setMapReady] = useState(false);
+
+  useEffect(() => {
+    setMapReady(true);
+  }, []);
   return (
+    
     <>
-      <div className={styles.treeCont}>
+      <div className={styles.treeCont} >
         Conteo De Olivos
-        <div className={styles.imgCont}>
-          <img
-            src={require('../images/img1.png')}
-            alt="img1"
-          />
-          <div className={styles.textCont}>
+        <div className={styles.imgCont} >
+          <div className={styles.mapCont}  >
+            <BingMapsComponent ref={mapRef} width="100%" height="100%" />
+          {mapReady && mapRef.current && <GeocoderComponent mapRef={mapRef}/>}
+          </div>
+          <div className={styles.textCont} id='geocoderContainer'>
             <table border="1">
               <thead>
                 <tr>
@@ -31,10 +41,7 @@ export default function TreeCount() {
               </tbody>
             </table>
           </div>
-          <img
-            src={require('../images/img2.png')}
-            alt="img2"
-          />
+          <img src={require("../images/img2.png")} alt="img2" />
         </div>
         <button>PROCESAR IMAGEN</button>
       </div>

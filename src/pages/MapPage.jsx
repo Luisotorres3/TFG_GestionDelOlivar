@@ -18,7 +18,7 @@ const MapPage = () => {
     <div>
       <h2>Mapa de Lindes</h2>
       <div className={styles.mainCont}>
-        <BingMapsComponent ref={mapRef} />
+        <BingMapsComponent ref={mapRef} width="100%" height="80vh" />
         <div className={styles.buttonCont} id='geocoderContainer'>
           {mapReady && mapRef.current && <GeocoderComponent mapRef={mapRef}/>}
           <button>Crear Linde</button>
