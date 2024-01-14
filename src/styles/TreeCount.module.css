@@ -1,51 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .treeCont{
-    height: calc(100vh - 150px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  .imgCont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #556B2F;
-    height: 100%;
-  }
+
+.treeCont {
+  height: calc(100vh - 150px);
+}
+.imgCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #556b2f;
+  height: 100%;
+}
+
+.imgCont img {
+  max-width: 48%;
+  padding: 20px;
+}
+.textCont {
+  padding: 30px;
+  background-color: goldenrod;
+  border-radius: 50px;
   
-  .imgCont img {
-    max-width: 48%;
-    padding: 20px;
-  }
-  .textCont{
-    padding: 30px;
-    background-color: goldenrod;
-    border-radius: 50px;
-  }
-  .textCont div{
-    margin-top: 10px;
-  }
-  
-.section{
-    background-color: aqua;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
+}
+.textCont div {
+  margin-top: 10px;
+}
+.tableCont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tableCont table{
+  background-color: white;
+  width: 95%;
+}
+.section {
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }
 
 table {
-    border-collapse: collapse; /* Fusiona los bordes de las celdas */
-    width: 100%;
-  }
+  border-collapse: collapse; /* Fusiona los bordes de las celdas */
+  width: 100%;
+}
 
-  th, td {
-    border: 1px solid black; /* Establece bordes negros para celdas y encabezados */
-    padding: 8px; /* Agrega espacio interno para mejorar la apariencia */
-  }
+th,
+td {
+  border: 1px solid black; /* Establece bordes negros para celdas y encabezados */
+  padding: 8px; /* Agrega espacio interno para mejorar la apariencia */
+}
 
-  .mapCont{
-    width: 30%;
-    height: 60%;
-  }
+.mapCont {
+  width: 30%;
+  height: 60%;
+}
+
+/* Estilo base del botón */
+.procesarBoton {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #556b2f;
+  border-radius: 5px;
+  color: #556b2f;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-top: 20px;
+}
+
+/* Efecto hover para resaltar el botón */
+.procesarBoton:hover {
+  background-color: #556b2f;
+  color: #fff;
+}
+
+/* Efecto de sombra sutil al hacer clic */
+.procesarBoton:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

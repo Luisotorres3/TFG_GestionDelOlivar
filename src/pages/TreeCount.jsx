@@ -20,32 +20,26 @@ export default function TreeCount() {
               <GeocoderComponent mapRef={mapRef} target="" />
             )}
           </div>
-          <div className={styles.textCont} >
-            <div id="geocoderContainer">
+          <div className={styles.textCont}>
+            <div id="geocoderContainer" className={styles.tableCont}>
               <table border="1">
                 <thead>
                   <tr>
-                    <th>Número de hileras</th>
-                    <th>Número de olivos</th>
+                    <th>Nº Hileras</th>
+                    <th>Nº Árboles</th>
                   </tr>
                 </thead>
-
                 <tbody>
                   <tr>
                     <td>Fila 1, Celda 1</td>
                     <td>Fila 1, Celda 2</td>
                   </tr>
-                  <tr>
-                    <td>Fila 2, Celda 1</td>
-                    <td>Fila 2, Celda 2</td>
-                  </tr>
                 </tbody>
               </table>
             </div>
             <div>
-            <button>PROCESAR IMAGEN</button>
+              <button className={styles.procesarBoton}>PROCESAR IMAGEN</button>
             </div>
-            
           </div>
           <img src={require("../images/img2.png")} alt="img2" />
         </div>
