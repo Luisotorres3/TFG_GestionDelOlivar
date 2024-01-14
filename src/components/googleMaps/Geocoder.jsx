@@ -3,9 +3,8 @@ import Geocoder from "ol-geocoder";
 import "ol-geocoder/dist/ol-geocoder.css";
 import "../../styles/Geocoder.module.css";
 
-const GeocoderComponent = ({ mapRef }) => {
+const GeocoderComponent = ({ mapRef,target }) => {
   const geocoderRef = useRef();
-
   useEffect(() => {
     if (mapRef && mapRef.current) {
       // Configuración del geocoder
@@ -13,7 +12,7 @@ const GeocoderComponent = ({ mapRef }) => {
         provider: "osm",
         lang: "es",
         placeholder: "Buscar dirección...",
-        targetType: "text-input",
+        targetType: target || "text-input",
         autoComplete: true,
         keepOpen: true,
         target: "geocoderContainer",

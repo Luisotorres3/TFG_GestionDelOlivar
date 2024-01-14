@@ -21,8 +21,11 @@
   }
   .textCont{
     padding: 30px;
-    background-color: aquamarine;
+    background-color: goldenrod;
     border-radius: 50px;
+  }
+  .textCont div{
+    margin-top: 10px;
   }
   
 .section{
