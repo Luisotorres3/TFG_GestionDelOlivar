@@ -16,8 +16,7 @@
 }
 
 .imgCont img {
-  max-width: 48%;
-  padding: 20px;
+  margin-right: 30px;
 }
 .textCont {
   padding: 30px;
@@ -59,6 +58,8 @@ td {
 .mapCont {
   width: 30%;
   height: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Estilo base del botón */

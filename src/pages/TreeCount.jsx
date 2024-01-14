@@ -2,13 +2,22 @@ import React, { useRef, useEffect, useState } from "react";
 import styles from "../styles/TreeCount.module.css";
 import BingMapsComponent from "../components/googleMaps/BingMapsComponent";
 import GeocoderComponent from "../components/googleMaps/Geocoder";
+import html2canvas from "html2canvas";
+import MapCaptureButton from "./MapCaptureButton";
+
 export default function TreeCount() {
   const mapRef = useRef();
   const [mapReady, setMapReady] = useState(false);
+  const [capturedImage, setCapturedImage] = useState(null);
 
   useEffect(() => {
     setMapReady(true);
   }, []);
+
+  const handleCapture = (imgData) => {
+    setCapturedImage(imgData);
+  };
+
   return (
     <>
       <div className={styles.treeCont}>
@@ -20,8 +29,8 @@ export default function TreeCount() {
               <GeocoderComponent mapRef={mapRef} target="" />
             )}
           </div>
-          <div className={styles.textCont}>
-            <div id="geocoderContainer" className={styles.tableCont}>
+          <div className={styles.textCont} id="geocoderContainer" >
+            <div className={styles.tableCont}>
               <table border="1">
                 <thead>
                   <tr>
@@ -38,10 +47,18 @@ export default function TreeCount() {
               </table>
             </div>
             <div>
-              <button className={styles.procesarBoton}>PROCESAR IMAGEN</button>
+              <MapCaptureButton
+                map={mapRef}
+                bingMapRef={mapRef}
+                onCapture={handleCapture}
+              />
             </div>
           </div>
-          <img src={require("../images/img2.png")} alt="img2" />
+          <div className={styles.mapCont}>
+            {capturedImage && (
+              <img src={capturedImage} alt="Captured" />
+            )}
+          </div>
         </div>
       </div>
     </>
