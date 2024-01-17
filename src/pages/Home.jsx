@@ -4,16 +4,37 @@ export default function Home() {
   return (
     <>
       <div className={styles.homeCont}>
-        Home
-        <section className={styles.section}>
-          <h2>WWF History</h2>
-          <p>
-            The World Wide Fund for Nature (WWF) is an international
-            organization working on issues regarding the conservation, research
-            and restoration of the environment, formerly named the World
-            Wildlife Fund. WWF was founded in 1961.
-          </p>
-        </section>        
+        <div className={styles.firstDiv}>
+          <div className={styles.firstDiv2}>LOREM IPSUM</div>
+          <div className={styles.firstDiv3}>
+            <div className={styles.firstDiv4}>
+              <img src={require("../images/img1.png")} alt="img1" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+            <div className={styles.firstDiv4}>
+              <img src={require("../images/img1.png")} alt="img1" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div><div className={styles.firstDiv4}>
+              <img src={require("../images/img1.png")} alt="img1" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

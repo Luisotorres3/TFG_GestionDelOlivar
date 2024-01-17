@@ -5,3 +5,13 @@
   background-color: #343a40; /* Color oscuro de fondo (bg-dark) */
   color: #ffffff; /* Texto claro (text-light) */
 }
+
+.contFooter{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contFooter a{
+  color: #FFD700; /* Color amarillo dorado cuando se hace hover */
+}

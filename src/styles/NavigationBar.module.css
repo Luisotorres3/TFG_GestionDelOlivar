@@ -7,14 +7,13 @@
     color: #FFD700; /* Color amarillo dorado cuando se hace hover */
   }
   
-  /* Estilo para el hover de Navbar.Brand */
-  .navLink:hover{
-    color: #FFD700; /* Color amarillo dorado cuando se hace hover */
-  }
-
   /* Estilo para el enlace activo */
 .navLink.active {
   background-color: #816e03; /* Color de fondo cuando está activo */
   border-radius: 4px; /* Añade bordes redondeados para un aspecto más agradable */
+}
+.navbarBrand{
+  font-size: 1.4rem;
+  font-weight: bold;
 }
   
