@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import styles from "../styles/TreeCount.module.css";
-import BingMapsComponent from "../components/googleMaps/BingMapsComponent";
-import GeocoderComponent from "../components/googleMaps/Geocoder";
+import BingMapsComponent from "../components/maps/BingMapsComponent";
+import GeocoderComponent from "../components/maps/Geocoder";
 import html2canvas from "html2canvas";
 import MapCaptureButton from "./MapCaptureButton";
 

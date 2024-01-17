@@ -1,8 +1,8 @@
 // MapPage.jsx
 import React, { useRef, useEffect,useState  } from "react";
-import BingMapsComponent from "../components/googleMaps/BingMapsComponent";
+import BingMapsComponent from "../components/maps/BingMapsComponent";
 import styles from "../styles/MapPage.module.css";
-import GeocoderComponent from "../components/googleMaps/Geocoder";
+import GeocoderComponent from "../components/maps/Geocoder";
 import "../styles/Geocoder.module.css";
 
 
