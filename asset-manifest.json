@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/Luisotorres3.github.io/static/css/main.e07de29b.css",
-    "main.js": "/Luisotorres3.github.io/static/js/main.31f47ce9.js",
-    "static/js/787.b3a2c0ba.chunk.js": "/Luisotorres3.github.io/static/js/787.b3a2c0ba.chunk.js",
-    "index.html": "/Luisotorres3.github.io/index.html",
-    "main.e07de29b.css.map": "/Luisotorres3.github.io/static/css/main.e07de29b.css.map",
-    "main.31f47ce9.js.map": "/Luisotorres3.github.io/static/js/main.31f47ce9.js.map",
-    "787.b3a2c0ba.chunk.js.map": "/Luisotorres3.github.io/static/js/787.b3a2c0ba.chunk.js.map"
+    "main.css": "/TFG_React/static/css/main.46a160ce.css",
+    "main.js": "/TFG_React/static/js/main.4792c3b6.js",
+    "static/js/787.b3a2c0ba.chunk.js": "/TFG_React/static/js/787.b3a2c0ba.chunk.js",
+    "static/media/olivesBackground.jpg": "/TFG_React/static/media/olivesBackground.29fa8708eece25aa8e44.jpg",
+    "static/media/sunset.jpg": "/TFG_React/static/media/sunset.ab19eb6fc568e5c0ff4d.jpg",
+    "static/media/img1.png": "/TFG_React/static/media/img1.d6d074a4016f6854b2d9.png",
+    "static/media/fa-solid-900.ttf": "/TFG_React/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
+    "static/media/fa-brands-400.ttf": "/TFG_React/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
+    "static/media/fa-solid-900.woff2": "/TFG_React/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
+    "static/media/fa-brands-400.woff2": "/TFG_React/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
+    "static/media/fa-regular-400.ttf": "/TFG_React/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
+    "static/media/fa-regular-400.woff2": "/TFG_React/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
+    "static/media/fa-v4compatibility.ttf": "/TFG_React/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
+    "static/media/fa-v4compatibility.woff2": "/TFG_React/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
+    "index.html": "/TFG_React/index.html",
+    "main.46a160ce.css.map": "/TFG_React/static/css/main.46a160ce.css.map",
+    "main.4792c3b6.js.map": "/TFG_React/static/js/main.4792c3b6.js.map",
+    "787.b3a2c0ba.chunk.js.map": "/TFG_React/static/js/787.b3a2c0ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e07de29b.css",
-    "static/js/main.31f47ce9.js"
+    "static/css/main.46a160ce.css",
+    "static/js/main.4792c3b6.js"
   ]
 }
