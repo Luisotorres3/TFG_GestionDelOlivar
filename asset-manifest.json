@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/luisotorres3.github.io/luisotorres3.github.io/static/css/main.3c31e71b.css",
+    "main.js": "/luisotorres3.github.io/luisotorres3.github.io/static/js/main.e0d1980a.js",
+    "static/js/787.b3a2c0ba.chunk.js": "/luisotorres3.github.io/luisotorres3.github.io/static/js/787.b3a2c0ba.chunk.js",
+    "static/media/sunset.jpg": "/luisotorres3.github.io/luisotorres3.github.io/static/media/sunset.ab19eb6fc568e5c0ff4d.jpg",
+    "index.html": "/luisotorres3.github.io/luisotorres3.github.io/index.html",
+    "main.3c31e71b.css.map": "/luisotorres3.github.io/luisotorres3.github.io/static/css/main.3c31e71b.css.map",
+    "main.e0d1980a.js.map": "/luisotorres3.github.io/luisotorres3.github.io/static/js/main.e0d1980a.js.map",
+    "787.b3a2c0ba.chunk.js.map": "/luisotorres3.github.io/luisotorres3.github.io/static/js/787.b3a2c0ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c31e71b.css",
+    "static/js/main.e0d1980a.js"
+  ]
+}
