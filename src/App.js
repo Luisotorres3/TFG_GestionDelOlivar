@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/footer/Footer';
-import { Routes,Route } from 'react-router-dom';
+import { Routes,Route,HashRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './components/navigation/NavigationBar';
 import MapPage from './pages/MapPage';

@@ -1,16 +1,17 @@
 /* MapPage.css */
-
+.prinCont{
+  height: calc(100vh - 150px);
+}
 .mainCont {
   display: flex;
+  justify-content: space-between;
   align-items: center; /* Centra el contenido horizontalmente */
-}
-
-.mapCont {
-  width: 80%;
+  height: 100%;
 }
 
 .buttonCont {
   width: 20%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra los botones horizontalmente */
@@ -23,3 +24,9 @@
 }
 
 /* Estilos adicionales según sea necesario */
+.mapCont {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}

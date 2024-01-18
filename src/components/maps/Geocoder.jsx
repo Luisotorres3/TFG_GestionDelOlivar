@@ -35,6 +35,7 @@ const GeocoderComponent = ({ mapRef,target }) => {
         if (geocoderElement) {
           geocoderElement.style.position = "static";
           geocoderElement.style.padding = "0 10px";
+          geocoderElement.style.width = "-webkit-fill-available";
           const childDivs = geocoderElement.querySelectorAll("ul");
           // Iterar sobre los div hijos y aplicar estilos
           childDivs.forEach((div) => {

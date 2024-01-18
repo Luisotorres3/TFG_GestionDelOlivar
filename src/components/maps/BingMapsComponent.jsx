@@ -4,6 +4,7 @@ import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
 import Map from 'ol/Map';
 import BingMaps from 'ol/source/BingMaps';
+import styles from '../../styles/BingMaps.module.css';
 
 const BingMapsComponent = forwardRef((props, ref) => {
   const { width, height } = props;
@@ -29,8 +30,10 @@ const BingMapsComponent = forwardRef((props, ref) => {
     });
 
     return () => {
-      // Limpieza al desmontar el componente, si es necesario
-      mapRef.current.setTarget(null);
+      // Limpieza al desmontar el componente
+      if (mapRef.current) {
+        mapRef.current.setTarget(null);
+      }
     };
   }, []);
 
@@ -41,7 +44,7 @@ const BingMapsComponent = forwardRef((props, ref) => {
     }
   }, [ref]);
 
-  return <div ref={mapRef} id="map" style={{ width: width, height: height, marginLeft:'30px' }}></div>;
+  return <div ref={mapRef} id="map" style={{ width: width, height: height, marginLeft:'30px' }} className={styles.mapCont }></div>;
 });
 
 export default BingMapsComponent;

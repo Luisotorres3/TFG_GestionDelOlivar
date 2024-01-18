@@ -19,9 +19,13 @@
   ); /* Color oscuro de fondo con transparencia del 50% */
   display: flex;
   justify-content: center;
+  color: white;
   
 }
-
+.homeCont a{
+  color: white;
+  text-decoration: none;
+}
 .homeCont img{
   height: 60px;
   width: 60px;
@@ -40,20 +44,27 @@
 }
 
 .firstDiv {
-  height: 40%;
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: column;
   border-radius: 100px;  
   margin: 2%;
 }
 
 .firstDiv2 {
-  background: url('../images/sunset.jpg') no-repeat center center/cover;
-  height: 100%;
+  background-color: #343a40; /* Color oscuro de fondo (bg-dark) */
+  height: 30%;
   border-radius: 10px;
   margin-bottom: 10px;
+  color: white;
+}
+.firstDiv2 h2{
+  color: white;
+}
+.firstDiv2 a{
+  text-decoration: none;
+  color: #FFD700;
 }
 
 .firstDiv3 {
@@ -67,10 +78,49 @@
 }
 
 .firstDiv4 {
-  width: 20%;
-  background-color: yellow;
+  background-color: #343a40; /* Color oscuro de fondo (bg-dark) */
+  width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 10px;
 }
+.firstDiv4 p{
+  text-align: start;
+}
+.firstDiv4 a{
+  align-items: end;
+}
+
+/* Home.module.css */
+
+.arrowButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.arrowContainer {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.arrowIcon {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.arrowButton:hover {
+  background-color: #2980b9;
+}
+
+.arrowButton.clicked .arrowIcon {
+  transform: rotate(180deg);
+}
+
