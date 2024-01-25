@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TFG_GestionDelOlivar/static/css/main.8e186d13.css",
-    "main.js": "/TFG_GestionDelOlivar/static/js/main.fedbeea7.js",
+    "main.js": "/TFG_GestionDelOlivar/static/js/main.056f3d98.js",
     "static/js/787.b3a2c0ba.chunk.js": "/TFG_GestionDelOlivar/static/js/787.b3a2c0ba.chunk.js",
     "static/media/olivesBackground.jpg": "/TFG_GestionDelOlivar/static/media/olivesBackground.29fa8708eece25aa8e44.jpg",
     "static/media/sunset.jpg": "/TFG_GestionDelOlivar/static/media/sunset.ab19eb6fc568e5c0ff4d.jpg",
@@ -15,11 +15,11 @@
     "static/media/fa-v4compatibility.woff2": "/TFG_GestionDelOlivar/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/TFG_GestionDelOlivar/index.html",
     "main.8e186d13.css.map": "/TFG_GestionDelOlivar/static/css/main.8e186d13.css.map",
-    "main.fedbeea7.js.map": "/TFG_GestionDelOlivar/static/js/main.fedbeea7.js.map",
+    "main.056f3d98.js.map": "/TFG_GestionDelOlivar/static/js/main.056f3d98.js.map",
     "787.b3a2c0ba.chunk.js.map": "/TFG_GestionDelOlivar/static/js/787.b3a2c0ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e186d13.css",
-    "static/js/main.fedbeea7.js"
+    "static/js/main.056f3d98.js"
   ]
 }
